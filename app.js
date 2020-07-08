@@ -29,4 +29,12 @@ yargs.command({
   }
 });
 
+yargs.command({
+  command: 'read',
+  describe: 'Read all notes',
+  handler: function() {
+    console.log('Reading all notes');
+  }
+});
+
 console.log(yargs.argv);
