@@ -20,4 +20,13 @@ yargs.command({
   }
 });
 
+//create list command
+yargs.command({
+  command: 'list',
+  describe: 'List all notes',
+  handler: function() {
+    console.log('Showing all notes');
+  }
+});
+
 console.log(yargs.argv);
