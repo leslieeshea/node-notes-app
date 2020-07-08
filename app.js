@@ -25,15 +25,16 @@ yargs.command({
   command: 'list',
   describe: 'List all notes',
   handler: function() {
-    console.log('Showing all notes');
+    console.log('Listing all notes');
   }
 });
 
+//create read command
 yargs.command({
   command: 'read',
-  describe: 'Read all notes',
+  describe: 'Read a note',
   handler: function() {
-    console.log('Reading all notes');
+    console.log('Reading a notes');
   }
 });
 
