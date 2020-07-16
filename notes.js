@@ -17,10 +17,10 @@ const addNote = function(title, body) {
       title: title,
       body: body
     });
+    console.log(chalk.green.inverse('Note added'));
     savedNotes(notes);
-    console.log('New note added');
   } else {
-    console.log('Note title already taken');
+    console.log(chalk.red.inverse('Note title already taken'));
   }
 }
 
