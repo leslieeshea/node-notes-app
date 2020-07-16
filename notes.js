@@ -17,7 +17,7 @@ const addNote = function(title, body) {
       body: body
     });
     savedNotes(notes);
-    console.log('New note added!');
+    console.log('New note added');
   } else {
     console.log('Note title already taken');
   }
@@ -46,6 +46,7 @@ const removeNote = function(title) {
   });
 
   savedNotes(notesToKeep);
+  console.log('Note removed');
 }
 
 module.exports = {
