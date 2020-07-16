@@ -1,8 +1,6 @@
-const chalk = require('chalk');
 const yargs = require('yargs');
 const notes = require('./notes.js');
 
-//create add command
 yargs.command({
   command: 'add',
   describe: 'Add a new note',
@@ -23,7 +21,6 @@ yargs.command({
   }
 });
 
-//create remove command
 yargs.command({
   command: 'remove',
   describe: 'Remove a note',
@@ -39,7 +36,6 @@ yargs.command({
   }
 });
 
-//create list command
 yargs.command({
   command: 'list',
   describe: 'List all notes',
@@ -48,7 +44,6 @@ yargs.command({
   }
 });
 
-//create read command
 yargs.command({
   command: 'read',
   describe: 'Read a note',
